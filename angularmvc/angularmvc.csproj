@@ -246,6 +246,7 @@
     <TypeScriptCompile Include="app\boottodolist.ts" />
     <TypeScriptCompile Include="app\components\todolist\todolist.component.ts" />
     <TypeScriptCompile Include="app\services\app.service.todolist.ts" />
+    <TypeScriptCompile Include="app\todolist.module.ts" />
     <TypeScriptCompile Include="app\utils\HttpHelpers.ts" />
     <TypeScriptCompile Include="Scripts\Enums.ts">
       <DependentUpon>TypeLite.Net4.tt</DependentUpon>
