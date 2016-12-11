@@ -9,16 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var app_service_todolist_1 = require('./services/app.service.todolist');
+var platform_browser_1 = require('@angular/platform-browser');
+var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
+var app_service_todolist_1 = require('./services/app.service.todolist');
 var todolist_component_1 = require('./components/todolist/todolist.component');
+//import { HttpHelpers } from './utils/HttpHelpers';
 var TodoListModule = (function () {
     function TodoListModule() {
     }
     TodoListModule = __decorate([
         core_1.NgModule({
-            imports: [http_1.HttpModule],
-            declarations: [todolist_component_1.TodoListComponent],
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule],
+            declarations: [todolist_component_1.TodoListComponent /*, HttpHelpers*/],
             providers: [app_service_todolist_1.AppServiceTodoList],
             bootstrap: [todolist_component_1.TodoListComponent]
         }), 

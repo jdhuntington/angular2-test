@@ -3,9 +3,12 @@
 }
 @section scripts{
     @Html.Partial("DefineAngular")
-    <script>
+<script>
+      System.import('app').catch(function(err){ console.error(err); });
+</script>
+    @*<script>
         System.import('app/boottodolist');
-    </script>
+    </script>*@
 }
 <todolist class="todolistcontent">
     <div class="waitloading">

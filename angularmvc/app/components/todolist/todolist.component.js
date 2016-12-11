@@ -100,9 +100,10 @@ var TodoListComponent = (function () {
             templateUrl: './app/components/todolist/todolist.component.html',
             styleUrls: ['./app/components/todolist/todolist.component.css']
         }), 
-        __metadata('design:paramtypes', [app_service_todolist_1.AppServiceTodoList])
+        __metadata('design:paramtypes', [(typeof (_a = typeof app_service_todolist_1.AppServiceTodoList !== 'undefined' && app_service_todolist_1.AppServiceTodoList) === 'function' && _a) || Object])
     ], TodoListComponent);
     return TodoListComponent;
+    var _a;
 }());
 exports.TodoListComponent = TodoListComponent;
 //# sourceMappingURL=todolist.component.js.map

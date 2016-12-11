@@ -1,8 +1,7 @@
-﻿import {enableProdMode} from '@angular/core';
-import { platformBrowser } from '@angular/platform-browser';
-import {AppServiceTodoList} from './services/app.service.todolist';
-import {HttpModule} from '@angular/http';
-import {TodoListComponent} from './components/todolist/todolist.component';
+﻿//import {enableProdMode} from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { TodoListModule } from './todolist.module';
 
 //enableProdMode();
-platformBrowser().bootstrapModule(TodoListComponent, [HttpModule, AppServiceTodoList]);
+platformBrowserDynamic().bootstrapModule(TodoListModule);

@@ -1,11 +1,15 @@
 ﻿import { NgModule } from '@angular/core';
-import { AppServiceTodoList } from './services/app.service.todolist';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
+import { AppServiceTodoList } from './services/app.service.todolist';
 import { TodoListComponent } from './components/todolist/todolist.component';
+//import { HttpHelpers } from './utils/HttpHelpers';
 
 @NgModule({
-    imports: [HttpModule],
-    declarations: [TodoListComponent ],
+    imports: [BrowserModule, HttpModule, FormsModule],
+    declarations: [TodoListComponent/*, HttpHelpers*/ ],
     providers: [AppServiceTodoList ],
     bootstrap: [TodoListComponent ]
 })

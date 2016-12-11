@@ -5,8 +5,8 @@
 <form *ngIf="!haserror">
     <div class="leftcontainer borderedboxlight">
         <div class="addcontentlist">
-            <i class="glyphicon glyphicon-plus" (click)="addlist(newlistctrl)" [ngClass]="{'actionenable' : newlistctrl.valid, 'actiondisable' : !newlistctrl.valid}"></i>
-            <input type="text" [(ngModel)]="newlist" class="form-control" ngControl="newlistctrl" required #newlistctrl="ngForm" />
+            <!--<i class="glyphicon glyphicon-plus" (click)="addlist(newlistctrl)" [ngClass]="{'actionenable' : newlistctrl.valid, 'actiondisable' : !newlistctrl.valid}"></i>
+            <input type="text" [(ngModel)]="newlist" class="form-control" ngControl="newlistctrl" required #newlistctrl="ngForm" />-->
         </div>
         <div class="list-group" *ngIf="todolist">
             <a href="#" (click)="SelectedList=listitem" class="list-group-item listwrapper" [class.active]="SelectedList && listitem.Id==SelectedList.Id" *ngFor="let listitem of todolist">
@@ -21,8 +21,8 @@
     <div class="centercontainer borderedboxlight">
         <ul class="list-group" *ngIf="todolist">
             <li class="list-group-item addcontent">
-                <i class="glyphicon glyphicon-plus" (click)="addtask(newtaskctrl)" [ngClass]="{'actionenable' : newtaskctrl.valid, 'actiondisable' : !newtaskctrl.valid}"></i>
-                <input type="text" [(ngModel)]="newtask" class="form-control" ngControl="newtaskctrl" required #newtaskctrl="ngForm" />
+                <!--<i class="glyphicon glyphicon-plus" (click)="addtask(newtaskctrl)" [ngClass]="{'actionenable' : newtaskctrl.valid, 'actiondisable' : !newtaskctrl.valid}"></i>
+                <input type="text" [(ngModel)]="newtask" class="form-control" ngControl="newtaskctrl" required #newtaskctrl="ngForm" />-->
             </li>
             <li class="list-group-item" *ngFor="let task of selectedtasks">
                 <div class="taskwrapper">
