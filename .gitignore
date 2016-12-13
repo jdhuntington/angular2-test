@@ -184,6 +184,8 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 # TypeScript js files
-
 angularmvc/app/**/*.js
 angularmvc/app/**/*.js.map
+
+# Compiled AOT angular files
+angularmvc/aot/
