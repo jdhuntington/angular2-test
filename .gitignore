@@ -185,5 +185,5 @@ FakesAssemblies/
 
 # TypeScript js files
 
-src/DitchLine.Web/app/**/*.js
-src/DitchLine.Web/app/**/*.js.map
+angularmvc/app/**/*.js
+angularmvc/app/**/*.js.map
