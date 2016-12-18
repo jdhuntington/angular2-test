@@ -166,6 +166,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TasksController.cs" />
+    <Compile Include="DebugExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -189,11 +190,13 @@
     <Content Include="app\components\todolist\todolist.component.css" />
     <Content Include="app\components\todolist\todolist.component.html" />
     <None Include="readme.md" />
+    <Content Include="rollup-config.js" />
     <Content Include="systemjs.config.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
     <Content Include="tsconfig-aot.json" />
+    <Content Include="Views\Shared\DefineAngular.cshtml" />
     <None Include="_typingsrc" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -226,7 +229,7 @@
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
     <Content Include="Scripts\Manager.ttinclude" />
-    <Content Include="Views\Shared\DefineAngular.cshtml" />
+    <Content Include="Views\Shared\DefineAngular.debug.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -243,7 +246,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\boottodolist.ts" />
+    <TypeScriptCompile Include="app\main-aot.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\components\todolist\todolist.component.ts" />
     <TypeScriptCompile Include="app\services\app.service.todolist.ts" />
     <TypeScriptCompile Include="app\todolist.module.ts" />

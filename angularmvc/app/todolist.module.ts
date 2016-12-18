@@ -8,6 +8,7 @@ import { TodoListComponent } from './components/todolist/todolist.component';
 //import { HttpHelpers } from './utils/HttpHelpers';
 
 @NgModule({
+    id: 'ToDoList',
     imports: [BrowserModule, HttpModule, FormsModule],
     declarations: [TodoListComponent/*, HttpHelpers*/ ],
     providers: [AppServiceTodoList ],

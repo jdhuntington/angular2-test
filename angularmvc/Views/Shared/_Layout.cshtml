@@ -6,6 +6,10 @@
     <title>TodoList Sample</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @if (IsSectionDefined("EarlyScripts"))
+    {
+        @RenderSection("EarlyScripts", required: false)
+    }
 </head>
 <body>
     <header>

@@ -1,5 +1,5 @@
 ﻿{
-  "compileOnSave": true,
+  //"compileOnSave": true,
   "compilerOptions": {
     "target": "es5",
     "module": "es2015",
@@ -7,24 +7,19 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false
+    "lib": [ "es2015", "dom" ],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
   },
 
   "files": [
-    "app/app.module.ts",
-    "app/main.ts"
+    "app/todolist.module.ts",
+    "app/main-aot.ts"
   ],
 
   "angularCompilerOptions": {
     "genDir": "aot",
     "skipMetadataEmit": true
-  },
+  }
 
-  "exclude": [
-    "node_modules",
-    "typings/main",
-    "typings/main.d.ts",
-    "Scripts/TypeLite.Net4.d.ts"
-  ]
 }

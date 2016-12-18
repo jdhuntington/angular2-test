@@ -1,17 +1,35 @@
 ﻿@section title{
     Angular2 Version
 }
-@section scripts{
-    @Html.Partial("DefineAngular")
-<script>
-      System.import('app').catch(function(err){ console.error(err); });
-</script>
-    @*<script>
-        System.import('app/boottodolist');
-    </script>*@
+@section EarlyScripts{
+    @if (Html.IsDebug())
+    {
+        @Html.Partial("DefineAngular.debug")
+    }
+    else
+    {
+        @Html.Partial("DefineAngular")
+    }
+    <script>
+        @if (Html.IsDebug()) {
+            @Html.Raw("System.import('app').catch(function (err) { console.error(err); });")
+        }
+        else
+        {
+            @Html.Raw("window.module = \'aot\';")
+        }
+
+    </script>
 }
 <todolist class="todolistcontent">
     <div class="waitloading">
         loading...
     </div>
 </todolist>
+
+@section Scripts{
+    @if (Html.IsDebug() == false)
+    {
+        <script src="dist/build.js"></script>
+    }
+}

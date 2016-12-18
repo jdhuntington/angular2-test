@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "typings install",
-    "typings": "typings"
+    "typings": "typings",
+    "build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js"
   },
   "license": "ISC",
   "dependencies": {
-
+    
     "@angular/common": "2.2.4",
     "@angular/compiler": "2.2.4",
     "@angular/compiler-cli": "2.2.4",
@@ -27,5 +28,12 @@
     "typescript": "~2.0.10",
     "typings": "0.8.1",
     "zone.js": "^0.6.21"
+  },
+
+  "devDependencies": {
+    "rollup": "0.37.0",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "rollup-plugin-commonjs": "6.0.0",
+    "rollup-plugin-uglify": "1.0.1"
   }
 }
