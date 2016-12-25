@@ -7,11 +7,16 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "lib": [ "es2015", "dom" ],
     "removeComments": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "typeRoots": [
+      "../../node_modules/@types/"
+    ]
   },
   "exclude": [
     "node_modules",
+    "**/*-aot.ts",
     "typings/main",
     "typings/main.d.ts",
     "Scripts/TypeLite.Net4.d.ts"
