@@ -189,3 +189,4 @@ angularmvc/app/**/*.js.map
 
 # Compiled AOT angular files
 angularmvc/aot/
+angularmvc/dist/
