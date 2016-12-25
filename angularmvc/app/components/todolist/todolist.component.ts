@@ -28,7 +28,7 @@ declare module Models.ViewModel {
 }
 
 @Component({
-    moduleId: 'ToDoList',
+    moduleId: module.id,
     selector: 'todolist',
     templateUrl: 'todolist.component.html',
     styleUrls: ['todolist.component.css']
