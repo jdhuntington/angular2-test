@@ -192,6 +192,9 @@
     <Content Include="app\components\todolist\todolist.component.html" />
     <None Include="readme.md" />
     <Content Include="rollup-config.js" />
+	<Content Include="node_modules/core-js/client/shim.min.js"/>
+	<Content Include="node_modules/zone.js/dist/zone.js"/>
+	<Content Include="dist/build.js"/>
     <Content Include="systemjs.config.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
